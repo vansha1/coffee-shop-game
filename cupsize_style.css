@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+#second-page {
+    
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("Images/Backgrounds/cup_bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; /* So we can absolutely place the character later */
+}
+
+#cover {
+    width: 100vw;
+    height: 100vh;
+    position : absolute;
+    object-fit: cover;
+    z-index: 2;
+    opacity: 0.5;
+    display: none;
+}
+
+#guide_cover {
+  position: absolute;
+  top: 75px ;
+  left: 85px;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  z-index: 1;
+  cursor : pointer;
+  transition: transform 0.25s ease;
+  transform-origin: center center;
+}
+
+#summary {
+  position: absolute;
+  top: 75px;
+  left : 950px;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  z-index: 1;
+  cursor : pointer;
+  transition: transform 0.25s ease;
+  transform-origin: center center;
+}
+
+#close {
+  position: absolute;
+  top: 75px;
+  left : 900px;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  z-index: 4;
+  cursor : pointer;
+  transition: transform 0.25s ease;
+  transform-origin: center center;
+  display : none;
+}
+
+
+#summary:hover,
+#guide_cover:hover,
+#close:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+#ChooseCup1 { /*brown*/
+  position: absolute;
+  top: 100px;
+  left: 500px;
+  transform: translateX(-50%);
+  width: 450px;
+  z-index: 1;
+  animation: pulse2 2s infinite;
+}
+
+#ChooseCup2 { /*pink*/
+  position: absolute;
+  top: 103px;
+  left: 505px;
+  transform: translateX(-50%);
+  width: 450px;
+  z-index: 1;
+  animation: pulse1 2s infinite;
+}
+
+#previous1 {
+  position: absolute;
+  top: 42%;
+  left: 50px;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  z-index: 1;
+  cursor : pointer;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
+
+#next1 {
+  position: absolute;
+  top: 42%;
+  left: 1070px;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  z-index: 1;
+  cursor : pointer;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
+
+#previous1:hover,
+#next1:hover {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+#guide {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 750px;
+  z-index: 3;
+  display :none;
+}
+
+/* for cups*/
+
+#s_cup {
+  position: absolute;
+  bottom : 19%;
+  left: 930px;
+  transform: translateX(-50%);
+  width: 85px;
+  z-index: 1;
+  display : none;
+  animation: pulse3 2.2s infinite;
+}
+
+#m_cup {
+  position: absolute;
+  bottom : 19%;
+  left: 930px;
+  transform: translateX(-50%);
+  width: 88px;
+  z-index: 1;
+  display : none;
+  animation: pulse3 2.2s infinite;
+}
+
+#l_cup {
+  position: absolute;
+  bottom : 19%;
+  left: 930px;
+  transform: translateX(-50%);
+  width: 88px;
+  z-index: 1;
+  display : none;
+  animation: pulse3 2.2s infinite;
+}
+
+#s_cap {
+  position: absolute;
+  bottom : 76px;
+  left: 240px;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  z-index: 1;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
+
+#m_cap {
+  position: absolute;
+  bottom : 64px;
+  left: 393px;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  z-index: 1;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
+
+#l_cap {
+  position: absolute;
+  bottom : 52px;
+  left: 550px;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  z-index: 1;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
+
+#s_cap:hover,
+#m_cap:hover,
+#l_cap:hover {
+  /* outline: 2px solid lime; this will show where the image ends */
+  filter: drop-shadow(0 0 5px rgb(255, 230, 0));
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+@keyframes pulse1 {
+  0%, 100% { scale:1; }
+  50% { scale:1.005; }
+}
+
+@keyframes pulse2 {
+  0%, 100% { opacity: 1}
+  50% { opacity: 0.8}
+}
+
+@keyframes pulse3 {
+  0%, 100% { scale:1; }
+  50% { scale:1.05; }
+}

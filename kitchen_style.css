@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#third-page {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("Images/Backgrounds/kitchen_bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#previous2 {
+  position: absolute;
+  top: 42%;
+  left: 50px;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  z-index: 1;
+  cursor : pointer;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
+
+#next2 {
+  position: absolute;
+  top: 42%;
+  left: 1070px;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  z-index: 1;
+  cursor : pointer;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
+
+#previous2:hover,
+#next2:hover {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+#milkoat_pump {
+  position: absolute;
+  top: 0px;
+  left: 90px;
+  transform: translateX(-50%);
+  width: 100px;
+  z-index: 1;
+  display : none;
+}
+
+#milkcow_pump {
+  position: absolute;
+  top: 0px;
+  left: 90px;
+  transform: translateX(-50%);
+  width: 100px;
+  z-index: 1;
+}
+
+#milkalm_pump {
+  position: absolute;
+  top: 0px;
+  left: 90px;
+  transform: translateX(-50%);
+  width: 100px;
+  z-index: 1;
+  display : none;
+}
+
+#water_pump {
+  position: absolute;
+  top: 0px;
+  left: 75px;
+  transform: translateX(-50%);
+  width: 100px;
+  z-index: 1;
+}
+
+#choc_pump {
+  position: absolute;
+  top: 0px;
+  left: 75px;
+  transform: translateX(-50%);
+  width: 100px;
+  z-index: 1;
+}
+
+#espr_pump {
+  position: absolute;
+  top: 0px;
+  left: 75px;
+  transform: translateX(-50%);
+  width: 100px;
+  z-index: 1;
+}
+
+#foam_pump {
+  position: absolute;
+  top: 0px;
+  left: 75px;
+  transform: translateX(-50%);
+  width: 100px;
+  z-index: 1;
+}

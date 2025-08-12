@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#first-page {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("Images/Backgrounds/home_bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* --- START TEXT --- */
+#start-text {
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 24px;
+  background-color: #9c5a3c;
+  color: #fff9bd;
+  padding: 10px 20px;
+  border: 2px dashed #fff9bd;
+  border-radius: 10px;
+  z-index: 999;
+  text-align: center;
+  animation: pulse 1.5s infinite;
+}
+
+/* --- CHARACTER SECTION --- */
+#character-wrapper {
+  position: absolute;
+  bottom: 60px;
+  left: 52%;
+  transform: translateX(-50%);
+  z-index: 10;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+}
+
+#character-wrapper.hover-effect {
+  filter: drop-shadow(0 0 7px rgb(255, 230, 0));
+}
+
+#character {
+  width: auto;
+  height: 335px;
+  object-fit: contain;
+  display: block;
+  pointer-events: auto;
+}
+
+#me {
+  position: absolute;
+  top: 275px;
+  left: 75px;
+  transform: translateX(-50%);
+  width: 255px;
+  z-index: 1;
+}
+
+/* --- BUTTONS --- */
+
+/* --- BUTTONS --- */
+
+/* Shared base state */
+#refresh, #kitchen_button {
+  position: absolute;
+  left: 850px;
+  transform: translateX(-50%);
+  width: 200px;
+  z-index: 1;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Individual positioning */
+#refresh {
+  top: 420px;
+  animation: wobble2 2.3s ease-in-out infinite;
+}
+
+#kitchen_button {
+  top: 490px;
+  animation: wobble1 2.3s ease-in-out infinite;
+}
+
+/* When enabled */
+#refresh.enabled {
+  opacity: 1;
+  pointer-events: auto;
+  cursor: pointer; 
+}
+#kitchen_button.enabled {
+  opacity: 1;
+  pointer-events: auto;
+  cursor: pointer !important;
+}
+
+/* Hover effect only when enabled */
+#refresh.enabled:hover,
+#kitchen_button.enabled:hover {
+  opacity: 0.8 !important;
+}
+
+
+/* --- SPEECH BUBBLES --- */
+.bubble {
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  padding: 5px 8px;
+  border-radius: 10px;
+  position: absolute;
+  max-width: 350px;
+  z-index: 5;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.bubble.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.conversation1 .bubble {
+  bottom: 350px;
+  left: 20px;
+  border: 3px solid #2f3699;
+  background: #b5a5d5;
+  color: #2f3699;
+}
+
+.conversation2 .bubble {
+  bottom: 400px;
+  left: 40%;
+  border: 3px solid #9c5a3c;
+  background: #fff9bd;
+  color: #9c5a3c;
+}
+
+/* --- ANIMATIONS --- */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes wobble1 {
+  0%   { transform: translateX(0); }
+  25%  { transform: translateX(-3px); }
+  50%  { transform: translateX(3px); }
+  75%  { transform: translateX(-3px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes wobble2 {
+  0%   { transform: translateX(0); }
+  25%  { transform: translateX(3px); }
+  50%  { transform: translateX(-3px); }
+  75%  { transform: translateX(3px); }
+  100% { transform: translateX(0); }
+}

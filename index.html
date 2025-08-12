@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coffee Shop</title>
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="cupsize_style.css"> 
+        <link rel="stylesheet" href="kitchen_style.css"> 
+    </head>
+    <p id="start-text">Click anywhere on the screen to start</p>
+    <body>
+    <div id="first-page"> <!-- FIRST PAGE -->
+        <div class="conversation1">
+            <div id="bubble-container1" class="bubble hidden">
+                <p id="bubble-text1"></p>
+            </div>
+        </div>
+
+        <div class="conversation2">
+            <div id="bubble-container2" class="bubble hidden">
+                <p id="bubble-text2"></p>
+            </div>
+        </div>
+
+        <div id="character-wrapper">
+            <img id="character" src="" alt="Customer">
+        </div>
+
+        <img id="me" src="" alt="">       
+        <img id="kitchen_button" src="" alt="">
+        <img id="refresh" src="" alt="">
+    </div>
+
+<!-- END OF PAGE -->
+
+    <div id="second-page" style="display: none;"> <!-- SECOND PAGE -->
+
+        <img id="cover" src="Images/Backgrounds/empty.png" alt="">
+        <img id="previous1" src="Images/Buttons/prev_button.png" alt="">
+        <img id="next1" src="Images/Buttons/next_button.png" alt="">
+        <img id="guide_cover" src="Images/Buttons/guide_cover.png" alt="">
+        <img id="guide" src="Images/Buttons/Guide.png" alt="">
+        <img id="summary" src="Images/Buttons/summary.png" alt="">
+        <img id="ChooseCup1" src="Images/Buttons/CupSize_brown.png" alt="">
+        <img id="ChooseCup2" src="Images/Buttons/CupSize_pink.png" alt="">
+        <img id="s_cup" src="Images/Cups/s_cup.png" alt="">
+        <img id="m_cup" src="Images/Cups/m_cup.png" alt="">
+        <img id="l_cup" src="Images/Cups/l_cup.png" alt="">
+        <img id="s_cap" src="Images/Cups/s_cap.png" alt="">
+        <img id="m_cap" src="Images/Cups/m_cap.png" alt="">
+        <img id="l_cap" src="Images/Cups/l_cap.png" alt="">
+        <img id="close" src="Images/Buttons/Close.png" alt="">
+    </div>
+
+<!-- END OF PAGE -->
+
+    <div id="third-page" style="display: none;"> <!-- THIRD PAGE -->
+        <img id="previous2" src="Images/Buttons/prev_button.png" alt="">
+        <img id="next2" src="Images/Buttons/next_button.png" alt="">
+        <img id="milkoat_pump" src="Images/Pumps/oat_milk.png" alt="">
+        <img id="milkcow_pump" src="Images/Pumps/cow_milk.png" alt="">
+        <img id="milkalm_pump" src="Images/Pumps/almond_milk.png" alt="">
+        <img id="water_pump" src="Images/Pumps/water.png" alt="">
+        <img id="choc_pump" src="Images/Pumps/chocolate.png" alt="">
+        <img id="espr_pump" src="Images/Pumps/espresso.png" alt="">
+        <img id="foam_pump" src="Images/Pumps/foam.png" alt="">
+
+    </div>
+    
+    <script src="script.js" defer></script>
+    <script src="cupsize_script.js" defer></script>
+    <script src="kitchen_script.js" defer></script>
+
+
+    </body>
+</html>
