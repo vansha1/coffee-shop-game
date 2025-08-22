@@ -1,3 +1,7 @@
+window.gameState = {
+  selectedCup: null
+};
+
 const characters = [
     { name: "Sam", image: "img_sam.png" },
     { name: "Nan", image: "img_nan.png" },

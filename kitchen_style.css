@@ -15,6 +15,9 @@
   position: relative;
 }
 
+
+
+
 #previous2 {
   position: absolute;
   top: 42%;
@@ -47,64 +50,83 @@
 #milkoat_pump {
   position: absolute;
   top: 0px;
-  left: 90px;
+  left: 175px;
   transform: translateX(-50%);
   width: 100px;
   z-index: 1;
+  cursor: pointer;
   display : none;
 }
 
 #milkcow_pump {
   position: absolute;
   top: 0px;
-  left: 90px;
+  left: 175px;
   transform: translateX(-50%);
   width: 100px;
   z-index: 1;
+  cursor: pointer;
 }
 
 #milkalm_pump {
   position: absolute;
   top: 0px;
-  left: 90px;
+  left: 175px;
   transform: translateX(-50%);
   width: 100px;
   z-index: 1;
+  cursor: pointer;
   display : none;
 }
 
 #water_pump {
   position: absolute;
   top: 0px;
-  left: 75px;
+  left: 875px;
   transform: translateX(-50%);
   width: 100px;
   z-index: 1;
+  cursor: pointer;
 }
 
 #choc_pump {
   position: absolute;
   top: 0px;
-  left: 75px;
+  left: 700px;
   transform: translateX(-50%);
   width: 100px;
   z-index: 1;
+  cursor: pointer;
 }
 
 #espr_pump {
   position: absolute;
   top: 0px;
-  left: 75px;
+  left: 525px;
   transform: translateX(-50%);
   width: 100px;
   z-index: 1;
+  cursor: pointer;
 }
 
 #foam_pump {
   position: absolute;
   top: 0px;
-  left: 75px;
+  left: 350px;
   transform: translateX(-50%);
   width: 100px;
   z-index: 1;
+  pointer-events: auto;
+  cursor: pointer;
 }
+
+#foam_pump:hover,
+#espr_pump:hover,
+#choc_pump:hover,
+#water_pump:hover,
+#milkoat_pump:hover,
+#milkcow_pump:hover,
+#milkalm_pump:hover{
+  filter: drop-shadow(0 0 4px rgb(147, 145, 53));
+}
+
